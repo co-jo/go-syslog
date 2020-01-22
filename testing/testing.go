@@ -17,7 +17,7 @@ const (
 	letterIdxMax  = 63 / letterIdxBits   // Number of letter indices fitting in 63 bits
 )
 
-// RandomBytes returns a random byte slice with length n.
+// RandomBytes returns a random byte slice with length n..
 func RandomBytes(n int) []byte {
 	src := rand.NewSource(time.Now().UnixNano())
 	b := make([]byte, n)
