@@ -56,7 +56,7 @@ procidrange = printusascii{1,128};
 
 msgidrange = printusascii{1,32};
 
-sdname = (printusascii - ('=' | sp | csb | dq)){1,32};
+sdname = (printusascii - ('=' | sp | csb | dq)){1,64};
 
 # rfc 3629
 utf8tail = 0x80..0xBF;

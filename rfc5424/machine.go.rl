@@ -4,8 +4,8 @@ import (
 	"time"
 	"fmt"
 
-	"github.com/influxdata/go-syslog/v2"
-	"github.com/influxdata/go-syslog/v2/common"
+	"github.com/co-jo/go-syslog/v2"
+	"github.com/co-jo/go-syslog/v2/common"
 )
 
 // ColumnPositionTemplate is the template used to communicate the column where errors occur.
@@ -140,7 +140,11 @@ action set_paramvalue {
 		if len(m.backslashat) > 0 {
 			text = common.RemoveBytes(text, m.backslashat, m.pb)
 		}
-		output.structuredData[m.currentelem][m.currentparam] = string(text)
+
+		_, found := output.structuredData[m.currentelem][m.currentparam];
+		if (len(m.currentparam) <= 32 && !found) {
+			output.structuredData[m.currentelem][m.currentparam] = string(text)
+		}
 	}
 }
 

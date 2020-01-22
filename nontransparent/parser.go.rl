@@ -4,8 +4,8 @@ import (
     "io"
 
     parser "github.com/leodido/ragel-machinery/parser"
-    syslog "github.com/influxdata/go-syslog/v2"
-    "github.com/influxdata/go-syslog/v2/rfc5424"
+    syslog "github.com/co-jo/go-syslog/v2"
+    "github.com/co-jo/go-syslog/v2/rfc5424"
 )
 
 %%{

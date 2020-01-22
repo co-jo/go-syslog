@@ -6,8 +6,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/influxdata/go-syslog/v2"
-	"github.com/influxdata/go-syslog/v2/rfc5424"
+	"github.com/co-jo/go-syslog/v2"
+	"github.com/co-jo/go-syslog/v2/rfc5424"
 	"github.com/leodido/ragel-machinery"
 	"github.com/stretchr/testify/assert"
 )

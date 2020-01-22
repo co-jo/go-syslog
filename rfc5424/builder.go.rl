@@ -5,7 +5,7 @@ import (
     "sort"
     "fmt"
 
-    "github.com/influxdata/go-syslog/v2/common"
+    "github.com/co-jo/go-syslog/v2/common"
 )
 
 %%{
