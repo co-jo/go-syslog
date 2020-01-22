@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/davecgh/go-spew/spew"
 	syslog "github.com/co-jo/go-syslog/v2"
+	"github.com/davecgh/go-spew/spew"
 )
 
 func output(out interface{}) {
