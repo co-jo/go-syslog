@@ -129,7 +129,6 @@ func (p *parser) run() {
 
 func (p *parser) parse(input []byte) *syslog.Result {
 	sys, err := p.internal.Parse(input)
-	fmt.Println(string(input))
 	return &syslog.Result{
 		Message: sys,
 		Error:   err,
