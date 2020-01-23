@@ -127,6 +127,7 @@ func (p *parser) run() {
 	}
 }
 
+// Comment.
 func (p *parser) parse(input []byte) *syslog.Result {
 	sys, err := p.internal.Parse(input)
 	fmt.Println(string(input))
